@@ -140,7 +140,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: inherit;
 		text-decoration: none;
 	}
@@ -1800,6 +1800,16 @@ input, select, textarea {
 
 			header.major {
 				margin: 0 0 2em 0;
+			}
+
+			.about-me {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.about-me > img {
+				margin-top: -20px;
+				margin-right: 50px;
 			}
 
 		}
@@ -3971,8 +3981,26 @@ input, select, textarea {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 	}
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.about-me {
+		display: flex;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+	
+	.profile-pic {
+		max-width: 300px;
+		margin-left: 50px;
+	}
+	
+	.skill-pic {
+		max-width: 200px;
+		max-height: 200px;
+		margin: 20px;
 	}
